@@ -58,9 +58,9 @@ function HoodiesSection({ onBack }) {
     <section className="category-section">
       <div className="category-container">
         <div className="category-header">
-          <button className="back-btn" onClick={onBack}>
-            ← Back to Shop
-          </button>
+          <button className="back-btn" onClick={() => { console.log('Back button clicked'); onBack(); }}>
+  ← Back to Shop
+</button>
           <h2 className="category-title">Hoodies Collection</h2>
           <p className="category-description">
             Stay warm and stylish with our premium hoodie collection

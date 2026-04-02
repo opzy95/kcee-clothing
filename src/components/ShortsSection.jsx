@@ -45,6 +45,7 @@ function ShortsSection({ onBack }) {
     const whatsappUrl = `https://wa.me/7039146198?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+//   function ShortsSection({onBack})
 
   return (
     <section className="category-section">

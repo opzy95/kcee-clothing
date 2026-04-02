@@ -282,7 +282,7 @@
 .back-btn {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 123%;
   transform: translateY(-50%);
   background: #6c757d;
   color: white;
@@ -292,6 +292,7 @@
   cursor: pointer;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
+  z-index: 999;
 }
 
 .back-btn:hover {
