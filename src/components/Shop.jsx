@@ -171,13 +171,13 @@ function Shop() {
                 </div>
                 <div className="product-info">
                   <h4 className="product-name">{product.name}</h4>
-                  <p className="product-price">${product.price}</p>
+                  <p className="product-price">#{product.price}</p>
                   <div className="product-actions">
                     <button className="add-to-cart-btn">Add to Cart</button>
                     <button
                       className="whatsapp-order-btn"
                       onClick={() => {
-                        const message = `Hi! I'd like to order: ${product.name} - $${product.price}`;
+                        const message = `Hi! I'd like to order: ${product.name} - #${product.price}`;
                         const whatsappUrl = `https://wa.me/7039146198?text=${encodeURIComponent(message)}`;
                         window.open(whatsappUrl, "_blank");
                       }}
@@ -203,7 +203,7 @@ function Shop() {
               />
               <div className="arrival-info">
                 <h4>Fashion Top</h4>
-                <p>$32.99</p>
+                <p>#20,000</p>
               </div>
             </div>
             <div className="arrival-item">
@@ -214,7 +214,7 @@ function Shop() {
               />
               <div className="arrival-info">
                 <h4>Designer Top</h4>
-                <p>$39.99</p>
+                <p>#20,000</p>
               </div>
             </div>
             <div className="arrival-item">
@@ -225,7 +225,7 @@ function Shop() {
               />
               <div className="arrival-info">
                 <h4>Premium Cap</h4>
-                <p>$26.99</p>
+                <p>#12,000</p>
               </div>
             </div>
             <div className="arrival-item">
@@ -236,7 +236,7 @@ function Shop() {
               />
               <div className="arrival-info">
                 <h4>Sport Shorts</h4>
-                <p>$35.99</p>
+                <p>#8000</p>
               </div>
             </div>
           </div>
