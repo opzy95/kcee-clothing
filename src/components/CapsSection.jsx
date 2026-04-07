@@ -8,42 +8,42 @@ function CapsSection({ onBack }) {
     {
       id: 1,
       name: 'Baseball Cap',
-      price: 24.99,
+      price: "12,000",
       image: '/kcee-img/cap.jpeg',
       description: 'Classic baseball cap with adjustable strap'
     },
     {
       id: 2,
       name: 'Snapback Cap',
-      price: 29.99,
+      price: "12,000",
       image: '/kcee-img/caps2.jpeg',
       description: 'Retro snapback cap with flat brim'
     },
     {
       id: 3,
       name: 'Cap',
-      price: 19.99,
+      price: "12,000",
       image: '/kcee-img/caps3.jpeg',
       description: 'Warm knitted beanie for cold weather'
     },
     {
       id: 4,
       name: 'Throw Pillow',
-      price: 26.99,
+      price: "35,000",
       image: '/kcee-img/throw-pillow.jpeg',
       description: 'Mesh trucker cap with foam front'
     },
     {
       id: 5,
       name: 'Towel',
-      price: 22.99,
+      price: "12,000",
       image: '/kcee-img/towel.jpeg',
       description: 'Casual bucket hat for outdoor activities'
     },
     {
       id: 6,
       name: 'Towel',
-      price: 34.99,
+      price: "12,000",
       image: '/kcee-img/towel2.jpeg',
       description: 'Elegant fedora hat for formal occasions'
     }
@@ -58,7 +58,7 @@ function CapsSection({ onBack }) {
   const message = `Hi! I'd like to order:
 
 🛍️ Product: ${product.name}
-💰 Price: $${product.price}
+💰 Price: #${product.price}
 
 📸 Image: ${product.image}
 `;

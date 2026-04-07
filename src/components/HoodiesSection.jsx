@@ -8,28 +8,28 @@ function HoodiesSection({ onBack }) {
     {
       id: 1,
       name: 'Classic Hoodie',
-      price: 49.99,
+      price: "30,000",
       image: '/kcee-img/Hoodie.jpeg',
       description: 'Comfortable cotton blend hoodie with kangaroo pocket'
     },
     {
       id: 2,
       name: 'Zip Hoodie',
-      price: 54.99,
+      price: "35,000",
       image: '/kcee-img/Hoodie2.jpeg',
       description: 'Full-zip hoodie with fleece lining'
     },
     {
       id: 3,
       name: ' Kids Wear',
-      price: 59.99,
+      price: "10,000",
       image: '/kcee-img/top-kids.jpeg',
       description: 'Trendy oversized fit hoodie for street style'
     },
     {
       id: 4,
       name: 'Joggars',
-      price: 24.99,
+      price: "35,000",
       image: '/kcee-img/joggars.jpeg',
       description: 'Lightweight beach shorts perfect for summer'
     },

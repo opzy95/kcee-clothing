@@ -8,62 +8,62 @@ function OthersSection({ onBack }) {
     {
       id: 1,
       name: 'Top and Short',
-      price: 29.99,
+      price: "20,000",
       image: '/kcee-img/top.jpeg',
       description: 'Cotton t-shirt with unique graphic design'
     },
     {
       id: 2,
       name: 'Top and Short',
-      price: 59.99,
+      price: "20,000",
       image: '/kcee-img/top5.jpeg',
       description: 'Tactical cargo pants with multiple pockets'
     },
     {
       id: 3,
       name: 'Top and Short',
-      price: 79.99,
+      price: "20,000",
       image: '/kcee-img/top7.jpeg',
       description: 'Classic denim jacket with vintage wash'
     },
     {
       id: 4,
       name: 'Top and Short',
-      price: 42.99,
+      price: "20,000",
       image: '/kcee-img/top8.jpeg',
       description: 'Comfortable crewneck sweatshirt'
     },
     {
       id: 5,
       name: 'Top and Short',
-      price: 39.99,
+      price: "20,000",
       image: '/kcee-img/top9.jpeg',
       description: 'Athletic track pants with elastic waist'
     },
     {
       id: 6,
       name: 'Polo Shirt',
-      price: 34.99,
+      price: "20,000",
       image: '/kcee-img/top10.jpeg',
       description: 'Classic polo shirt for smart casual wear'
     },{
       id: 7,
       name: 'Top',
-      price: 52.99,
+      price: "20,000",
       image: '/kcee-img/top1.jpeg',
       description: 'Moisture-wicking athletic hoodie for workouts'
     },
     {
       id: 8,
       name: 'Top',
-      price: 64.99,
+      price: "20,000",
       image: '/kcee-img/top2.jpeg',
       description: 'Stylish bomber-style hoodie with ribbed cuffs'
     },
     {
       id: 9,
       name: 'Top',
-      price: 44.99,
+      price: "20,000",
       image: '/kcee-img/top3.jpeg',
       description: 'Retro-inspired hoodie with washed finish'
     }

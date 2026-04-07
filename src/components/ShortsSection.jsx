@@ -8,28 +8,28 @@ function ShortsSection({ onBack }) {
     {
       id: 1,
       name: 'Cargo Shorts',
-      price: 39.99,
+      price: "8000",
       image: '/kcee-img/shorts.jpeg',
       description: 'Comfortable cargo shorts with multiple pockets'
     },
     {
       id: 2,
       name: 'Denim Shorts',
-      price: 34.99,
+      price: "10,000",
       image: '/kcee-img/shortss.jpeg',
       description: 'Classic denim shorts for casual wear'
     },
     {
       id: 3,
       name: 'Athletic Shorts',
-      price: 29.99,
+      price: "8000",
       image: '/kcee-img/shorts3.jpeg',
       description: 'Breathable athletic shorts for workouts'
     },
     {
       id: 4,
       name: 'Top',
-      price: 32.99,
+      price: "30,000",
       image: '/kcee-img/Top -short.jpeg',
       description: 'Professional basketball shorts with mesh panels'
     }
