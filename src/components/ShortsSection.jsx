@@ -30,7 +30,14 @@ function ShortsSection({ onBack }) {
       id: 4,
       name: 'Top',
       price: "30,000",
-      image: '/kcee-img/Top -short.jpeg',
+      image: '/kcee-img/tt.jpeg',
+      description: 'Professional basketball shorts with mesh panels'
+    },
+    {
+      id: 5,
+      name: 'Short',
+      price: "10,000",
+      image: '/kcee-img/short.jpeg',
       description: 'Professional basketball shorts with mesh panels'
     }
   ];

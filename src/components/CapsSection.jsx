@@ -102,7 +102,7 @@ function CapsSection({ onBack }) {
               <div className="product-info">
                 <h3 className="product-name">{product.name}</h3>
                 <p className="product-description">{product.description}</p>
-                <p className="product-price">${product.price}</p>
+                <p className="product-price">#{product.price}</p>
 
                 <div className="product-actions">
                   <button
@@ -130,12 +130,12 @@ function CapsSection({ onBack }) {
               {cart.map((item, index) => (
                 <div key={index} className="cart-item">
                   <span>{item.name}</span>
-                  <span>${item.price}</span>
+                  <span>#{item.price}</span>
                 </div>
               ))}
             </div>
             <div className="cart-total">
-              <strong>Total: ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
+              <strong>Total: #{cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
             </div>
             <button className="checkout-btn">Proceed to Checkout</button>
           </div>

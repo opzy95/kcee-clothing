@@ -67,6 +67,255 @@ function OthersSection({ onBack }) {
       image: '/kcee-img/top3.jpeg',
       description: 'Retro-inspired hoodie with washed finish'
     }
+    ,
+    {
+      id: 10,
+      name: 'Joggars',
+      price: "30,000",
+      image: '/kcee-img/joggers.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    }
+    ,
+    {
+      id: 11,
+      name: 'Top',
+      price: "20,000",
+      image: '/kcee-img/top12.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 12,
+      name: 'Top',
+      price: "15,000",
+      image: '/kcee-img/top13.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 13,
+      name: 'Top',
+      price: "15,000",
+      image: '/kcee-img/top14.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    }
+    ,
+    {
+      id: 14,
+      name: 'Top',
+      price: "20,000",
+      image: '/kcee-img/top16.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 15,
+      name: 'Top',
+      price: "15,000",
+      image: '/kcee-img/top17.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 16,
+      name: 'Top',
+      price: "15,000",
+      image: '/kcee-img/top18.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 17,
+      name: 'Top',
+      price: "30,000",
+      image: '/kcee-img/top19.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 18,
+      name: 'Top',
+      price: "10,000",
+      image: '/kcee-img/top20.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 19,
+      name: 'Top',
+      price: "15,000",
+      image: '/kcee-img/top21.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 20,
+      name: 'Top',
+      price: "20,000",
+      image: '/kcee-img/top22.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 21,
+      name: 'Top',
+      price: "8,000",
+      image: '/kcee-img/top23.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 22,
+      name: 'Top',
+      price: "12,000",
+      image: '/kcee-img/top24.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 23,
+      name: 'Top',
+      price: "12,000",
+      image: '/kcee-img/top25.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 24,
+      name: 'Top',
+      price: "12,000",
+      image: '/kcee-img/top26.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 25,
+      name: 'Top',
+      price: "8,000",
+      image: '/kcee-img/top27.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 26,
+      name: 'Top',
+      price: "12,000",
+      image: '/kcee-img/top28.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 27,
+      name: 'Top',
+      price: "12,000",
+      image: '/kcee-img/top29.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    }
+    ,
+    {
+      id: 28,
+      name: 'Top',
+      price: "30,000",
+      image: '/kcee-img/top30.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 29,
+      name: 'Top',
+      price: "12,000",
+      image: '/kcee-img/top31.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 30,
+      name: 'Top',
+      price: "12,000",
+      image: '/kcee-img/top32.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 31,
+      name: 'Joggars',
+      price: "40,000",
+      image: '/kcee-img/j1.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 32,
+      name: 'Joggars',
+      price: "40,000",
+      image: '/kcee-img/j2.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 33,
+      name: 'Joggars',
+      price: "40,000",
+      image: '/kcee-img/j3.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 34,
+      name: 'Joggars',
+      price: "30,000",
+      image: '/kcee-img/j4.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 35,
+      name: 'Joggars',
+      price: "15,000",
+      image: '/kcee-img/j5.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 36,
+      name: 'Joggars',
+      price: "30,000",
+      image: '/kcee-img/j6.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 37,
+      name: 'Joggars',
+      price: "25,000",
+      image: '/kcee-img/j7.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 38,
+      name: 'Joggars',
+      price: "40,000",
+      image: '/kcee-img/j8.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 39,
+      name: 'Joggars',
+      price: "40,000",
+      image: '/kcee-img/j9.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 40,
+      name: 'Joggars',
+      price: "40,000",
+      image: '/kcee-img/j10.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 41,
+      name: 'Joggars',
+      price: "30,000",
+      image: '/kcee-img/j11.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 42,
+      name: 'Luxury Bottle',
+      price: "15,000",
+      image: '/kcee-img/bottle1.jpeg',
+      description: 'For your refreshed cold drinks'
+    },
+    {
+      id: 43,
+      name: 'Phone/ Mug',
+      price: "20,000",
+      image: '/kcee-img/phone-cover.jpeg',
+      description: 'Retro-inspired hoodie with washed finish'
+    },
+    {
+      id: 44,
+      name: 'Clock',
+      price: "20,000",
+      image: '/kcee-img/clock.jpeg',
+      description: 'A luxury clock to beautify your home '
+    }
   ];
 
   const addToCart = (product) => {
