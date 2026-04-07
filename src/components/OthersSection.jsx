@@ -75,7 +75,7 @@ function OthersSection({ onBack }) {
   };
 
   const orderViaWhatsApp = (product) => {
-    const message = `Hi! I'd like to order: ${product.name} - $${product.price}`;
+    const message = `Hi! I'd like to order: ${product.name} - #${product.price}`;
     const whatsappUrl = `https://wa.me/7039146198?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -115,7 +115,7 @@ function OthersSection({ onBack }) {
               <div className="product-info">
                 <h3 className="product-name">{product.name}</h3>
                 <p className="product-description">{product.description}</p>
-                <p className="product-price">${product.price}</p>
+                <p className="product-price">#{product.price}</p>
 
                 <div className="product-actions">
                   <button
@@ -143,12 +143,12 @@ function OthersSection({ onBack }) {
               {cart.map((item, index) => (
                 <div key={index} className="cart-item">
                   <span>{item.name}</span>
-                  <span>${item.price}</span>
+                  <span>#{item.price}</span>
                 </div>
               ))}
             </div>
             <div className="cart-total">
-              <strong>Total: ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
+              <strong>Total: #{cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
             </div>
             <button className="checkout-btn">Proceed to Checkout</button>
           </div>
