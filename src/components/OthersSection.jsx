@@ -316,6 +316,13 @@ function OthersSection({ onBack }) {
       price: "20,000",
       image: '/kcee-img/clock.jpeg',
       description: 'A luxury clock to beautify your home '
+    },
+    {
+      id: 45,
+      name: "Graphic T-Shirt",
+      price: "8,000",
+      image: "/kcee-img/round-neck.jpeg",
+      description: 'A nice luxury Top for your nice body'
     }
   ];
 

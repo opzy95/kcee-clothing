@@ -4,8 +4,10 @@ import ShortsSection from "./ShortsSection";
 import CapsSection from "./CapsSection";
 import HoodiesSection from "./HoodiesSection";
 import OthersSection from "./OthersSection";
+import { useCart } from './CartContext';
 
 function Shop() {
+  const { addToCart } = useCart();
   const [currentSection, setCurrentSection] = useState("main"); // 'main', 'shorts', 'caps', 'hoodies', 'others'
 
   const categories = [
@@ -173,7 +175,7 @@ function Shop() {
                   <h4 className="product-name">{product.name}</h4>
                   <p className="product-price">#{product.price}</p>
                   <div className="product-actions">
-                    <button className="add-to-cart-btn">Add to Cart</button>
+                    <button className="add-to-cart-btn" onClick={() => addToCart(product)}>Add to Cart</button>
                     <button
                       className="whatsapp-order-btn"
                       onClick={() => {
