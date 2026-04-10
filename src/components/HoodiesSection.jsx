@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Shop.css';
+import { useCart } from './CartContext';
 
 function HoodiesSection({ onBack }) {
-  const [cart, setCart] = useState([]);
+  const { addToCart } = useCart();
 
   const hoodies = [
     {
@@ -24,7 +25,7 @@ function HoodiesSection({ onBack }) {
       name: ' Kids Wear',
       price: "10,000",
       image: '/kcee-img/top-kids.jpeg',
-      description: 'Trendy oversized fit hoodie for street style'
+      description: 'Trendy nice short for street style'
     },
     {
       id: 4,
@@ -42,11 +43,6 @@ function HoodiesSection({ onBack }) {
     },
     
   ];
-
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-    alert(`${product.name} added to cart!`);
-  };
 
   const orderViaWhatsApp = (product) => {
     const message = `Hi! I'd like to order: ${product.name} - #${product.price}`;
@@ -110,7 +106,7 @@ function HoodiesSection({ onBack }) {
           ))}
         </div>
 
-        {cart.length > 0 && (
+        {/* {cart.length > 0 && (
           <div className="cart-summary">
             <h3>Cart Summary ({cart.length} items)</h3>
             <div className="cart-items">
@@ -122,11 +118,16 @@ function HoodiesSection({ onBack }) {
               ))}
             </div>
             <div className="cart-total">
-              <strong>Total: #{cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
-            </div>
+  <strong>
+    Total: ₦{cart.reduce((total, item) => {
+      const price = parseFloat(String(item.price).replace(/,/g, ''));
+      return total + price * item.quantity;
+    }, 0).toLocaleString()}
+  </strong>
+</div>
             <button className="checkout-btn">Proceed to Checkout</button>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Shop.css';
+import { useCart } from './CartContext';
 
 function OthersSection({ onBack }) {
-  const [cart, setCart] = useState([]);
+   const { addToCart } = useCart();
 
   const others = [
     {
@@ -17,21 +18,21 @@ function OthersSection({ onBack }) {
       name: 'Top and Short',
       price: "20,000",
       image: '/kcee-img/top5.jpeg',
-      description: 'Tactical cargo pants with multiple pockets'
+      description: 'Tactical short pants with multiple pockets'
     },
     {
       id: 3,
       name: 'Top and Short',
       price: "20,000",
       image: '/kcee-img/top7.jpeg',
-      description: 'Classic denim jacket with vintage wash'
+      description: 'Classic ice short with vintage wash'
     },
     {
       id: 4,
       name: 'Top and Short',
       price: "20,000",
       image: '/kcee-img/top8.jpeg',
-      description: 'Comfortable crewneck sweatshirt'
+      description: 'Comfortable crewneck short'
     },
     {
       id: 5,
@@ -51,21 +52,21 @@ function OthersSection({ onBack }) {
       name: 'Top',
       price: "20,000",
       image: '/kcee-img/top1.jpeg',
-      description: 'Moisture-wicking athletic hoodie for workouts'
+      description: 'Moisture-wicking athletic short for workouts'
     },
     {
       id: 8,
       name: 'Top',
       price: "20,000",
       image: '/kcee-img/top2.jpeg',
-      description: 'Stylish bomber-style hoodie with ribbed cuffs'
+      description: 'Stylish bomber-style short '
     },
     {
       id: 9,
       name: 'Top',
       price: "20,000",
       image: '/kcee-img/top3.jpeg',
-      description: 'Retro-inspired hoodie with washed finish'
+      description: 'Retro-inspired short with washed finish'
     }
     ,
     {
@@ -73,7 +74,7 @@ function OthersSection({ onBack }) {
       name: 'Joggars',
       price: "30,000",
       image: '/kcee-img/joggers.jpeg',
-      description: 'Retro-inspired hoodie with washed finish'
+      description: 'Retro-inspired joggars with washed finish'
     }
     ,
     {
@@ -81,7 +82,7 @@ function OthersSection({ onBack }) {
       name: 'Top',
       price: "20,000",
       image: '/kcee-img/top12.jpeg',
-      description: 'Retro-inspired hoodie with washed finish'
+      description: 'Retro-inspired Top with washed finish'
     },
     {
       id: 12,
@@ -318,11 +319,7 @@ function OthersSection({ onBack }) {
     }
   ];
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-    alert(`${product.name} added to cart!`);
-  };
-
+ 
   const orderViaWhatsApp = (product) => {
     const message = `Hi! I'd like to order: ${product.name} - #${product.price}`;
     const whatsappUrl = `https://wa.me/7039146198?text=${encodeURIComponent(message)}`;
@@ -385,7 +382,7 @@ function OthersSection({ onBack }) {
           ))}
         </div>
 
-        {cart.length > 0 && (
+        {/* {cart.length > 0 && (
           <div className="cart-summary">
             <h3>Cart Summary ({cart.length} items)</h3>
             <div className="cart-items">
@@ -397,11 +394,16 @@ function OthersSection({ onBack }) {
               ))}
             </div>
             <div className="cart-total">
-              <strong>Total: #{cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
-            </div>
+  <strong>
+    Total: ₦{cart.reduce((total, item) => {
+      const price = parseFloat(String(item.price).replace(/,/g, ''));
+      return total + price * item.quantity;
+    }, 0).toLocaleString()}
+  </strong>
+</div>
             <button className="checkout-btn">Proceed to Checkout</button>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

@@ -1,43 +1,72 @@
-import React, { useState } from 'react'; 
-import { FaSearch, FaUser, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa'; 
-import "./Navbar.css"; 
-import { Link } from 'react-router-dom'; 
+import React, { useState, useRef, useEffect } from 'react';
+import { FaUser, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { useCart } from './CartContext'; // ✅ import context
+import Cart from './Cart';                          // ✅ import cart drawer
+import "./Navbar.css";
 
-function Navbar() { 
-  const [menuOpen, setMenuOpen] = useState(false); 
+function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+  const navRef = useRef(null);
 
-  return ( 
-    <> 
-      <nav style={{ backgroundColor: '#f8f9fa', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 20px', borderBottom: '2px solid #007bff' }}> 
-        {/* Brand */} 
-        <h2>KCEE CLOTHING</h2> 
-        {/* Desktop Menu */} 
-        <ul className="desktop-menu"> 
-          <li><Link to="/">Home</Link></li> 
-         <li><Link to="/shop">Shop</Link></li> 
-          <li><Link to="/about"> About</Link></li> 
-          <li><Link to="/contact">Contact</Link></li> 
-        </ul> 
-        {/* Icons */} 
-        <div className="icons"> 
-          <FaSearch /> 
-          <FaUser /> 
-          <FaShoppingCart /> 
-        </div> 
-        {/* Hamburger */} 
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}> 
-          {menuOpen ? <FaTimes /> : <FaBars />} 
-        </div> 
-      </nav> 
-      {/* Mobile Menu */} 
-      <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}> 
-        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link> 
-        <Link to="/shop" onClick={() => setMenuOpen(false)}>Shop</Link> 
-        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link> 
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link> 
-      </div> 
-    </> 
-  ); 
-} 
+  // ✅ Get cart data from context — not local state
+  const { totalItems } = useCart();
+
+  // Close menu on outside click
+  useEffect(() => {
+    const handler = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  return (
+    <>
+      <nav className="navbar" ref={navRef}>
+
+        {/* Brand */}
+        <h2 className="brand">KCEE CLOTHING</h2>
+
+        {/* Desktop links */}
+        <ul className={`desktop-menu ${menuOpen ? 'open' : ''}`}>
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><Link to="/shop" onClick={() => setMenuOpen(false)}>Shop</Link></li>
+          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+        </ul>
+
+        {/* Icons + hamburger */}
+        <div className="nav-right">
+          <div className="nav-icons">
+            <FaUser className="nav-icon, user"  />
+
+            {/* ✅ totalItems now comes from CartContext */}
+            <div
+              className="cart-icon-wrap"
+              onClick={() => { setCartOpen(true); setMenuOpen(false); }}
+            >
+              <FaShoppingCart className="nav-icon" />
+              {totalItems > 0 && (
+                <span className="cart-badge">{totalItems}</span>
+              )}
+            </div>
+          </div>
+
+          <div className="hamburger" onClick={() => setMenuOpen(prev => !prev)}>
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </div>
+        </div>
+
+      </nav>
+
+      {/* ✅ Cart drawer — also reads from CartContext internally */}
+      {cartOpen && <Cart onClose={() => setCartOpen(false)} />}
+    </>
+  );
+}
 
 export default Navbar;

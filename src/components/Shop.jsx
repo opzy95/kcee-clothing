@@ -64,7 +64,7 @@ function Shop() {
     {
       id: 4,
       name: "Graphic T-Shirt",
-      price: "12,000",
+      price: "8,000",
       image: "/kcee-img/round-neck.jpeg",
       category: "others",
     },

@@ -1,58 +1,56 @@
 import React, { useState } from 'react';
 import './Shop.css';
+import { useCart } from './CartContext';
+
 
 function CapsSection({ onBack }) {
-  const [cart, setCart] = useState([]);
+   const { addToCart } = useCart();
 
   const caps = [
     {
       id: 1,
       name: 'Baseball Cap',
-      price: "12,000",
+      price: "8,000",
       image: '/kcee-img/cap.jpeg',
       description: 'Classic baseball cap with adjustable strap'
     },
     {
       id: 2,
       name: 'Snapback Cap',
-      price: "12,000",
+      price: "8,000",
       image: '/kcee-img/caps2.jpeg',
       description: 'Retro snapback cap with flat brim'
     },
     {
       id: 3,
       name: 'Cap',
-      price: "12,000",
+      price: "8,000",
       image: '/kcee-img/caps3.jpeg',
-      description: 'Warm knitted beanie for cold weather'
+      description: 'Warm knitted Cap for Niggas'
     },
     {
       id: 4,
       name: 'Throw Pillow',
       price: "35,000",
       image: '/kcee-img/throw-pillow.jpeg',
-      description: 'Mesh trucker cap with foam front'
+      description: 'A nice soft pillow,Mug and a Towel'
     },
     {
       id: 5,
       name: 'Towel',
       price: "12,000",
       image: '/kcee-img/towel.jpeg',
-      description: 'Casual bucket hat for outdoor activities'
+      description: 'Elegant fedora towel for formal occasions'
     },
     {
       id: 6,
       name: 'Towel',
       price: "12,000",
       image: '/kcee-img/towel2.jpeg',
-      description: 'Elegant fedora hat for formal occasions'
+      description: 'Elegant fedora towel for formal occasions'
     }
   ];
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-    alert(`${product.name} added to cart!`);
-  };
 
   const orderViaWhatsApp = (product) => {
   const message = `Hi! I'd like to order:
@@ -123,7 +121,7 @@ function CapsSection({ onBack }) {
           ))}
         </div>
 
-        {cart.length > 0 && (
+        {/* {cart.length > 0 && (
           <div className="cart-summary">
             <h3>Cart Summary ({cart.length} items)</h3>
             <div className="cart-items">
@@ -135,11 +133,16 @@ function CapsSection({ onBack }) {
               ))}
             </div>
             <div className="cart-total">
-              <strong>Total: #{cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</strong>
-            </div>
+  <strong>
+    Total: ₦{cart.reduce((total, item) => {
+      const price = parseFloat(String(item.price).replace(/,/g, ''));
+      return total + price * item.quantity;
+    }, 0).toLocaleString()}
+  </strong>
+</div>
             <button className="checkout-btn">Proceed to Checkout</button>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );
