@@ -1,11 +1,9 @@
 /* ============================================
    KCEE SHOP — Editorial Streetwear Aesthetic
-   Bold, high-contrast, magazine-style layout
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap');
 
-/* ─── CSS Variables ─── */
 :root {
   --black: #0a0a0a;
   --white: #f5f3ee;
@@ -15,21 +13,11 @@
   --muted: #6b6560;
   --border: #2a2a2a;
   --card-bg: #111111;
-  --highlight: #e8d5b0;
-
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'DM Sans', sans-serif;
   --font-mono: 'Space Mono', monospace;
 }
 
-/* ─── Base Reset ─── */
-::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* ─── Shop Section ─── */
 .shop-section {
   background-color: var(--black);
   min-height: 100vh;
@@ -41,12 +29,11 @@
 .shop-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem ;
+  padding: 0 2rem 6rem;
 }
 
-/* ─── Shop Header ─── */
 .shop-header {
-  padding: 5rem 0 3rem;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: flex-end;
@@ -64,10 +51,6 @@
   text-transform: uppercase;
 }
 
-.shop-title span {
-  color: white;
-}
-
 .shop-subtitle {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -79,7 +62,6 @@
   line-height: 1.6;
 }
 
-/* ─── Categories Grid ─── */
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -203,7 +185,6 @@
   background: var(--accent-dark);
 }
 
-/* ─── Featured Products ─── */
 .featured-products {
   margin: 5rem 0;
 }
@@ -216,18 +197,6 @@
   color: var(--white);
   text-transform: uppercase;
   margin-bottom: 2.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.featured-title::after,
-.section-title::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-  max-width: 300px;
 }
 
 .products-grid {
@@ -366,13 +335,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
   transition: background 0.2s ease, color 0.2s ease;
-}
-
-.whatsapp-order-btn::before {
-  content: '●';
-  font-size: 0.5rem;
 }
 
 .whatsapp-order-btn:active {
@@ -380,7 +343,6 @@
   color: var(--black);
 }
 
-/* ─── New Arrivals ─── */
 .new-arrivals {
   margin: 5rem 0 2rem;
 }
@@ -446,7 +408,6 @@
   font-weight: 700;
 }
 
-/* ─── Arrival Badge ─── */
 .arrival-item::after {
   content: 'NEW';
   position: absolute;
@@ -461,7 +422,6 @@
   pointer-events: none;
 }
 
-/* ─── Scrollbar ─── */
 ::-webkit-scrollbar {
   width: 4px;
 }

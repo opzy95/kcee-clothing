@@ -11,9 +11,9 @@ function Home() {
   return (
     <>
     
-    <Hero />,
-    <Shop/>,
-    <About/>,
+    <Hero />
+    <Shop/>
+    <About/>
     
     </>
   );

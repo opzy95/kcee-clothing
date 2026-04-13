@@ -42,7 +42,7 @@ function Navbar() {
         {/* Icons + hamburger */}
         <div className="nav-right">
           <div className="nav-icons">
-            <FaUser className="nav-icon, user"  />
+            <FaUser className="nav-icon user"  />
 
             {/* ✅ totalItems now comes from CartContext */}
             <div
