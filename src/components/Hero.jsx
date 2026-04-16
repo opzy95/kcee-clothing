@@ -10,7 +10,7 @@ function Hero() {
       {/* Content */}
       <div className="hero-content">
         <h1 className="hero-title">
-          KCEE CLOTHING
+          KCEE LUXURY AND FABRICS
         </h1>
 
         <p className="hero-subtitle">
