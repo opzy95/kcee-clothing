@@ -23,7 +23,7 @@ function About() {
             <div className="story-section">
               <h3>Our Story</h3>
               <p>
-                Founded with a passion for fashion and a commitment to quality, KCEE Clothing
+                Founded with a passion for fashion and a commitment to quality, KCEE LUXURY AND FABRICS
                 has been at the forefront of urban streetwear since our inception. We believe
                 that clothing should not only look good but feel great and stand the test of time.
               </p>
@@ -82,7 +82,7 @@ function About() {
                   <div className="stat-label">Products</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">5</div>
+                  <div className="stat-number">8</div>
                   <div className="stat-label">Years Experience</div>
                 </div>
                 <div className="stat-item">
