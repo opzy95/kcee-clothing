@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <h3>KCEE CLOTHING</h3>
+              <h3>KCEE LUXURY AND FABRICS</h3>
               <p>Where Style Meets Comfort</p>
             </div>
             <p className="footer-description">
@@ -54,9 +54,9 @@ function Footer() {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="contact-info">
-              <p>📍 123 Fashion Street<br />Style City, SC 12345</p>
+              <p>📍 Odonopa,ijebu imushin</p>
               <p>📞 2347039146193</p>
-              <p>✉️ kceeclothing@gmail.com</p>
+              <p>✉️ kceeclothings@gmail.com</p>
               <p>🕒 Mon - Sat: 9AM - 6PM</p>
             </div>
           </div>
@@ -77,7 +77,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; 2026 KCEE Clothing. All rights reserved.</p>
+            <p>&copy; 2026 KCEE CLOTHING AND FABRICS. All rights reserved.</p>
             <div className="footer-bottom-links">
               <a href="#privacy">Privacy Policy</a>
               <a href="#terms">Terms of Service</a>

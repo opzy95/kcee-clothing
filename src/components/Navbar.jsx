@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="navbar" ref={navRef}>
 
         {/* Brand */}
-        <h2 className="brand">KCEE CLOTHING</h2>
+        <h2 className="brand">KCEE LUXURY AND FABRICS</h2>
 
         {/* Desktop links */}
         <ul className={`desktop-menu ${menuOpen ? 'open' : ''}`}>

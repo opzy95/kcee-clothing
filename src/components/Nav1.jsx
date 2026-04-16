@@ -17,7 +17,7 @@ function Nav1(){
                 fontSize: "20px",
                 margin: 0
             }}>
-               Welcome to KCEE Clothing — your go-to destination for trendy, affordable, and high-quality outfits. We bring you styles that fit your vibe and elevate your everyday look. &nbsp;&nbsp;&nbsp; Welcome to KCEE Clothing — your go-to destination for trendy, affordable, and high-quality outfits. We bring you styles that fit your vibe and elevate your everyday look.
+               Welcome to KCEE LUXURY AND FABRICS — your go-to destination for trendy, affordable, and high-quality outfits. We bring you styles that fit your vibe and elevate your everyday look. &nbsp;&nbsp;&nbsp; Welcome to KCEE Clothing — your go-to destination for trendy, affordable, and high-quality outfits. We bring you styles that fit your vibe and elevate your everyday look.
             </h1>
         </div>
 
